@@ -1,0 +1,19 @@
+[project]
+name = "data-lab"
+version = "0.1.0"
+description = "Practical experiments in numerical methods and artificial intelligence."
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
